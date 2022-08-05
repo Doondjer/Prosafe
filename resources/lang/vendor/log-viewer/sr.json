@@ -1,0 +1,13 @@
+{
+    "Date": "Datum",
+    "The list of logs is empty!": "Lista logova je prazna!",
+    "All": "Svi",
+    "Emergency": "Emergency",
+    "Alert": "Alert",
+    "Critical": "Critical",
+    "Error": "Error",
+    "Warning": "Warning",
+    "Notice": "Notice",
+    "Info": "Info",
+    "Debug": "Debug"
+}

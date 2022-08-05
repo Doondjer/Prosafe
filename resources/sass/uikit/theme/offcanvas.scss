@@ -1,0 +1,38 @@
+//
+// Component: Off-canvas
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+$offcanvas-bar-background:                       $global-primary-background !default;
+
+// Bar
+// ========================================================================
+
+// @mixin hook-offcanvas-bar(){}
+
+
+// Close
+// ========================================================================
+
+// @mixin hook-offcanvas-close(){}
+
+
+// Overlay
+// ========================================================================
+
+// @mixin hook-offcanvas-overlay(){}
+
+
+// Miscellaneous
+// ========================================================================
+
+// @mixin hook-offcanvas-misc(){}
+.uk-nav > .uk-nav-item > a {
+    padding: 15px 20px;
+}
+.uk-nav > .uk-nav-item:not(:last-child) > a {
+    border-bottom: 1px solid $global-muted-color;
+}

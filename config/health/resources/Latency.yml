@@ -1,0 +1,21 @@
+name: Latency
+abbreviation: latency
+checker: PragmaRX\Health\Checkers\Ping
+notify: true
+binary: "{{ config('health.services.ping.bin') }}"
+error_message:
+  'The host "%s" exceeded the maximum accepted latency on ping: last ping was %s, accepted is %s'
+column_size: 3
+targets:
+  - server:
+      name: Google Serveri
+      hostname: google.com
+      accepted_latency: 15
+  - server:
+      name: Nemačka Serveri
+      hostname: 109.239.48.175
+      accepted_latency: 5
+  - server:
+      name: Srbija serveri
+      hostname: 212.200.71.170
+      accepted_latency: 90

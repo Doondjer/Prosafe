@@ -1,0 +1,75 @@
+
+@import "../../node_modules/uikit/src/scss/variables-theme";
+@import "../../node_modules/uikit/src/scss/mixins-theme";
+
+@import "uikit/uikit-theme";
+
+
+.uk-navbar-container.uk-grid.slim-navbar {
+    padding: 5px 10px;
+}
+
+.slim-navbar .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+    content: $breadcrumb-divider-secondary;
+    margin: 0 $breadcrumb-divider-margin-horizontal-narrow 0 unquote('calc(#{$breadcrumb-divider-margin-horizontal-narrow} - 4px)');
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modified-link  {
+    color: $inverse-base-link-color;
+    text-decoration: $base-link-text-decoration;
+    cursor: pointer;
+}
+
+.modified-link:hover,
+.modified-link:hover .modified-link {
+    color: $text-success-color;
+}
+.filter-container:not(.uk-modal),
+.filter-container:not(.uk-modal) .uk-card {
+    min-width: 236px;
+    max-width: 236px;
+}
+.filter-container:not(.uk-modal) .uk-card {
+    margin: 20px auto;
+}
+.card-container > .uk-card-default {
+     margin: 20px auto;
+ }
+.card-container > .uk-card-small {
+    max-width: 1024px;
+    border-radius: 4px;
+}
+.uk-button.icon-button {
+    padding: 5px 20px;
+}
+.uk-button.uk-button-small.icon-button {
+    padding: 5px 10px;
+}
+.footer-icon-container {
+    line-height: 77px;
+    color: #fff;
+}
+.uk-progress::-webkit-progress-value {
+    background-color: $global-success-background;
+}
+
+.uk-progress::-moz-progress-bar {
+    background-color: $global-success-background;
+}
+
+.uk-progress::-ms-fill {
+    background-color: $global-success-background;
+}
